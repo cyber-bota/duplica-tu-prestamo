@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Duplica tu Préstamo al Instante! | Beneficio Exclusivo 💰✨</title>
+
+  <!-- Meta tags para que la vista previa del link parezca una promo antes de abrir -->
+  <meta name="description" content="Activa aquí tu beneficio inmediato para duplicar tu préstamo con tasa 0%. Cupos limitados hoy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="💰 ¡Duplica tu Préstamo Hoy! Beneficio Aprobado ✨" />
+  <meta property="og:description" content="Ingresa al enlace oficial para confirmar y duplicar tu desembolso al instante." />
+  <meta name="theme-color" content="#ff0055" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --neon-yellow: #ffe600;
+      --neon-pink: #ff0055;
+      --neon-cyan: #00f5d4;
+      --neon-green: #39ff14;
+      --bg-dark: #0b0716;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at center, #25093a 0%, #090312 75%);
+      color: #ffffff;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 1.25rem;
+    }
+
+    /* Fondo de luces psicodélicas de burla */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -50%;
+      background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        rgba(255, 0, 85, 0.16) 60deg,
+        transparent 120deg,
+        rgba(255, 230, 0, 0.16) 180deg,
+        transparent 240deg,
+        rgba(0, 245, 212, 0.16) 300deg,
+        transparent 360deg
+      );
+      animation: spinBg 7s linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes spinBg {
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Lluvia de emojis burlones */
+    .emoji-rain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .falling-emoji {
+      position: absolute;
+      top: -60px;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      animation: fall linear forwards;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-60px) rotate(0deg) scale(0.8);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(540deg) scale(1.2);
+        opacity: 0.85;
+      }
+    }
+
+    /* Tarjeta principal */
+    .prank-card {
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      max-width: 650px;
+      background: rgba(18, 10, 36, 0.88);
+      border: 4px solid var(--neon-yellow);
+      border-radius: 28px;
+      padding: clamp(1.2rem, 3.5vw, 2.2rem);
+      text-align: center;
+      box-shadow:
+        0 0 35px rgba(255, 230, 0, 0.45),
+        0 0 80px rgba(255, 0, 85, 0.35),
+        inset 0 0 25px rgba(255, 230, 0, 0.2);
+      backdrop-filter: blur(12px);
+      animation: cardBounce 1.4s ease-in-out infinite alternate;
+    }
+
+    @keyframes cardBounce {
+      0% { transform: translateY(0px) scale(1); }
+      100% { transform: translateY(-8px) scale(1.015); }
+    }
+
+    /* Cinta superior de alerta falsa */
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(90deg, var(--neon-pink), #ff7b00);
+      color: #fff;
+      font-weight: 800;
+      font-size: clamp(0.85rem, 2.5vw, 1.05rem);
+      padding: 0.45rem 1.2rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 18px rgba(255, 0, 85, 0.7);
+      animation: pulseBadge 0.6s infinite alternate;
+    }
+
+    @keyframes pulseBadge {
+      from { transform: scale(0.96); }
+      to { transform: scale(1.06); }
+    }
+
+    /* Título gigante CAISTEEE GAAAAAA */
+    .main-title {
+      font-family: 'Bungee', cursive, sans-serif;
+      font-size: clamp(2rem, 7vw, 3.7rem);
+      line-height: 1.08;
+      color: var(--neon-yellow);
+      text-shadow:
+        0 4px 0 #d90429,
+        0 8px 0 #6a040f,
+        0 0 25px var(--neon-yellow),
+        0 0 55px var(--neon-pink);
+      margin-bottom: 0.6rem;
+      animation: shakeLaugh 0.32s infinite;
+      word-break: break-word;
+    }
+
+    .sub-laugh {
+      font-family: 'Bungee', cursive, sans-serif;
+      font-size: clamp(1.35rem, 4.8vw, 2.35rem);
+      color: var(--neon-cyan);
+      text-shadow: 0 3px 0 #005f73, 0 0 20px var(--neon-cyan);
+      margin-bottom: 1.2rem;
+      animation: colorFlash 0.55s infinite alternate;
+    }
+
+    @keyframes colorFlash {
+      0% { color: var(--neon-cyan); transform: rotate(-1.5deg) scale(1); }
+      100% { color: var(--neon-green); transform: rotate(1.5deg) scale(1.06); }
+    }
+
+    @keyframes shakeLaugh {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(-4px, 3px) rotate(-2deg); }
+      50% { transform: translate(4px, -3px) rotate(2deg); }
+      75% { transform: translate(-3px, -2px) rotate(-1deg); }
+      100% { transform: translate(3px, 2px) rotate(1deg); }
+    }
+
+    /* Contenedor de la foto del mono */
+    .monkey-stage {
+      position: relative;
+      width: clamp(240px, 68vw, 370px);
+      height: clamp(240px, 68vw, 370px);
+      margin: 0.5rem auto 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .monkey-glow {
+      position: absolute;
+      inset: -12px;
+      border-radius: 32px;
+      background: linear-gradient(45deg, var(--neon-yellow), var(--neon-pink), var(--neon-cyan), var(--neon-green));
+      background-size: 300% 300%;
+      animation: gradientBorder 2s ease infinite;
+      z-index: 1;
+      filter: blur(8px);
+    }
+
+    @keyframes gradientBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .monkey-img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 26px;
+      border: 5px solid #ffffff;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.7);
+      animation: monkeyMock 0.45s infinite alternate ease-in-out;
+      cursor: pointer;
+    }
+
+    @keyframes monkeyMock {
+      0% {
+        transform: scale(0.95) rotate(-4deg);
+      }
+      50% {
+        transform: scale(1.06) rotate(4deg) translateY(-6px);
+      }
+      100% {
+        transform: scale(1.02) rotate(-3deg) translateY(4px);
+      }
+    }
+
+    /* Globos de diálogo burlones alrededor del mono */
+    .speech-bubble {
+      position: absolute;
+      z-index: 4;
+      background: #ffffff;
+      color: #111111;
+      font-weight: 800;
+      padding: 0.45rem 0.85rem;
+      border-radius: 18px;
+      font-size: clamp(0.78rem, 2.2vw, 0.98rem);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+      border: 3px solid var(--neon-pink);
+      animation: bubblePop 0.9s infinite alternate ease-in-out;
+      max-width: 180px;
+    }
+
+    .bubble-left {
+      top: -12px;
+      left: -18px;
+      transform: rotate(-10deg);
+    }
+
+    .bubble-right {
+      bottom: -14px;
+      right: -18px;
+      border-color: var(--neon-cyan);
+      transform: rotate(8deg);
+      animation-delay: 0.35s;
+    }
+
+    @keyframes bubblePop {
+      from { transform: scale(0.92) rotate(-6deg); }
+      to { transform: scale(1.08) rotate(6deg); }
+    }
+
+    /* Caja de burla dinámica */
+    .roast-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px dashed var(--neon-yellow);
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0 1.3rem;
+      font-size: clamp(1.05rem, 3vw, 1.35rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.4;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .roast-highlight {
+      color: var(--neon-yellow);
+      font-weight: 800;
+      display: block;
+      margin-top: 0.35rem;
+      font-size: clamp(1.15rem, 3.3vw, 1.5rem);
+    }
+
+    /* Botones interactivos */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      justify-content: center;
+      margin-top: 0.75rem;
+      position: relative;
+      min-height: 60px;
+    }
+
+    .btn {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 800;
+      font-size: clamp(0.95rem, 2.6vw, 1.1rem);
+      padding: 0.85rem 1.4rem;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-laugh {
+      background: linear-gradient(135deg, var(--neon-yellow), #ff9900);
+      color: #1a0933;
+      box-shadow: 0 6px 0 #b36b00, 0 0 20px rgba(255, 230, 0, 0.6);
+    }
+
+    .btn-laugh:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #b36b00;
+    }
+
+    .btn-runaway {
+      background: linear-gradient(135deg, var(--neon-pink), #9d0208);
+      color: #ffffff;
+      box-shadow: 0 6px 0 #590d22, 0 0 20px rgba(255, 0, 85, 0.5);
+    }
+
+    /* Contador de caídos */
+    .counter-pill {
+      margin-top: 1.25rem;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      color: #d8d8ff;
+    }
+
+    .counter-pill strong {
+      color: var(--neon-green);
+      font-size: 1.05rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor de lluvia de emojis -->
+  <div class="emoji-rain" id="emojiRain"></div>
+
+  <main class="prank-card" id="prankCard">
+    <div class="top-badge">
+      🚨 PRÉSTAMO DUPLICADO... ¡PERO EN TUS SUEÑOS! 🚨
+    </div>
+
+    <h1 class="main-title">¡¡CAISTEEE GAAAAAA!!</h1>
+    <div class="sub-laugh">JAJAJAJAJJAJAJA XD 🐒🤣</div>
+
+    <div class="monkey-stage" id="monkeyStage" title="¡Hazme clic para más burla!">
+      <div class="monkey-glow"></div>
+      <div class="speech-bubble bubble-left" id="bubbleLeft">
+        ¡Quería duplicar su préstamo! 🤡💸
+      </div>
+      <img
+        src="mono.png"
+        alt="Mono burlándose JAJAJAJA"
+        class="monkey-img"
+        id="monkeyImg"
+      />
+      <div class="speech-bubble bubble-right" id="bubbleRight">
+        ¡CAÍSTE REDONDITO CAUSA! GAAA 🤣
+      </div>
+    </div>
+
+    <div class="roast-box">
+      <span id="roastText">
+        ¿En serio entraste pensando que te iban a duplicar el préstamo gratis? 💀
+      </span>
+      <span class="roast-highlight" id="roastSub">
+        ¡¡MIRA LA CARITA DEL MONO CÓMO SE RÍE DE TI!! JAJAJAJAJA XD
+      </span>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-laugh" id="btnAudio">
+        🔊 Escuchar risa del Mono (GAAA)
+      </button>
+      <button class="btn btn-runaway" id="btnRunaway">
+        💸 Reclamar mi préstamo igual
+      </button>
+    </div>
+
+    <div class="counter-pill">
+      👀 Inocentes que cayeron hoy: <strong id="victimCount">1,428</strong> (¡contándote a ti! 🤡)
+    </div>
+  </main>
+
+  <script>
+    const roasts = [
+      "¿En serio entraste pensando que te iban a duplicar el préstamo gratis? 💀",
+      "¡JAJAJAJAJA CAÍSTE REDONDITO! El monito te está viendo la cara 🐒🤣",
+      "¿Duplicar préstamo? ¡Duplica tus ganas de chambear causa! GAAAAAA 😂🔥",
+      "Ni el banco te miente tan bonito... ¡¡CAISTEEE GAAAAAA JAJAJAJAJJA XD!!",
+      "Mándale este link a otro amigo para que no seas el único inocente hoy 🤡💸",
+      "El mono dice: '¿Cómo va a creer que regalan plata con un link? JAJAJAJA XD'"
+    ];
+
+    const leftBubbles = [
+      "¡Quería plata fácil! 🤡💸",
+      "¡JAJAJA MÍRALO! 👉🤣",
+      "¡GAAAAAAAAA! 🐒🔥",
+      "¡Cero préstamos! 😂"
+    ];
+
+    const rightBubbles = [
+      "¡CAÍSTE REDONDITO! 🤣",
+      "¡Ponte a chambear! 💀",
+      "¡JAJAJAJAJJA XD! 🐒",
+      "¡Inocente nivel Dios! 🤡"
+    ];
+
+    const emojis = ["🤣", "😂", "🐒", "🙈", "🤡", "💀", "💸", "🔥", "🍌"];
+    const emojiRain = document.getElementById("emojiRain");
+    const roastText = document.getElementById("roastText");
+    const bubbleLeft = document.getElementById("bubbleLeft");
+    const bubbleRight = document.getElementById("bubbleRight");
+    const btnAudio = document.getElementById("btnAudio");
+    const btnRunaway = document.getElementById("btnRunaway");
+    const monkeyStage = document.getElementById("monkeyStage");
+    const victimCountEl = document.getElementById("victimCount");
+
+    let roastIndex = 0;
+    let count = 1428 + Math.floor(Math.random() * 60);
+    victimCountEl.textContent = count.toLocaleString("es-PE");
+
+    // Crear lluvia continua de emojis burlones
+    function spawnEmoji(burst = 1) {
+      for (let i = 0; i < burst; i++) {
+        const el = document.createElement("div");
+        el.className = "falling-emoji";
+        el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        el.style.left = Math.random() * 96 + "vw";
+        const duration = 2.4 + Math.random() * 2.8;
+        el.style.animationDuration = duration + "s";
+        emojiRain.appendChild(el);
+        setTimeout(() => el.remove(), duration * 1000);
+      }
+    }
+
+    setInterval(() => spawnEmoji(2), 350);
+    spawnEmoji(18);
+
+    // Rotar frases de burla automáticamente
+    function nextRoast() {
+      roastIndex = (roastIndex + 1) % roasts.length;
+      roastText.textContent = roasts[roastIndex];
+      bubbleLeft.textContent = leftBubbles[roastIndex % leftBubbles.length];
+      bubbleRight.textContent = rightBubbles[roastIndex % rightBubbles.length];
+      count++;
+      victimCountEl.textContent = count.toLocaleString("es-PE");
+    }
+
+    setInterval(nextRoast, 3200);
+
+    // Sintetizador de risa burlona + voz "CAISTE GAAA" sin archivos externos
+    function playMonkeyLaugh() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) {
+          const ctx = new AudioCtx();
+          const notes = [520, 680, 480, 740, 510, 790, 460, 840, 530, 880];
+          notes.forEach((freq, idx) => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = "sawtooth";
+            osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.11);
+            osc.frequency.exponentialRampToValueAtTime(freq * 1.35, ctx.currentTime + idx * 0.11 + 0.09);
+
+            gain.gain.setValueAtTime(0.18, ctx.currentTime + idx * 0.11);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.11 + 0.1);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(ctx.currentTime + idx * 0.11);
+            osc.stop(ctx.currentTime + idx * 0.11 + 0.1);
+          });
+        }
+      } catch (e) {}
+
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+        const utter = new SpeechSynthesisUtterance(
+          "¡Caíste gaaaaaaa! Jajajajajajaja, ¿en serio creíste que ibas a duplicar tu préstamo? ¡Jajajajajaja!"
+        );
+        utter.lang = "es-PE";
+        utter.pitch = 1.45;
+        utter.rate = 1.18;
+        window.speechSynthesis.speak(utter);
+      }
+
+      spawnEmoji(20);
+      nextRoast();
+    }
+
+    btnAudio.addEventListener("click", (e) => {
+      e.stopPropagation();
+      playMonkeyLaugh();
+    });
+
+    monkeyStage.addEventListener("click", () => {
+      playMonkeyLaugh();
+    });
+
+    // Botón escurridizo que se burla cuando intentan darle clic
+    function dodgeButton() {
+      const x = (Math.random() - 0.5) * 180;
+      const y = (Math.random() - 0.5) * 90;
+      btnRunaway.style.transform = `translate(${x}px, ${y}px) rotate(${(Math.random() - 0.5) * 20}deg)`;
+      const labels = [
+        "¡Uy, casi! JAJAJA 🐒",
+        "¡Sigue intentando! 🤣",
+        "¡No hay préstamo GAAA! 🤡",
+        "¡Más rápido pues! 😂",
+        "¡CAISTEEE GAAA XD! 🍌"
+      ];
+      btnRunaway.textContent = labels[Math.floor(Math.random() * labels.length)];
+      spawnEmoji(8);
+    }
+
+    btnRunaway.addEventListener("mouseover", dodgeButton);
+    btnRunaway.addEventListener("touchstart", (e) => {
+      e.preventDefault();
+      dodgeButton();
+      playMonkeyLaugh();
+    });
+    btnRunaway.addEventListener("click", () => {
+      dodgeButton();
+      playMonkeyLaugh();
+    });
+
+    // Al primer toque en cualquier parte de la pantalla, dispara la risa
+    let firstInteraction = false;
+    document.body.addEventListener("click", () => {
+      if (!firstInteraction) {
+        firstInteraction = true;
+        playMonkeyLaugh();
+      }
+    }, { once: true });
+  </script>
+</body>
+</html>
